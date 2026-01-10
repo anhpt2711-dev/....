@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <div class="row">
+            <label>Full name</label>
+            <input type="text" id="fullname" required>
+        </div>
+        <div class="row">
+            <label>Email</label>
+            <input type="text" id="Email" required>
+        </div>
+        <div class="row">
+            <label>Password</label>
+            <input type="text" id="Password" required>
+        </div>
+        <div class="row">
+            <label>Comfirm Password</label>
+            <input type="text" id="Comfirm Password" required>
+        </div>
+        <div class="row">
+            <label>Date of Birth</label>
+            <input type="date" name="day" min="1" max="31" required>
+            <!-- <input type="date" name="month" min="1" max="12">
+            <input type="date" name="year" min="0000" max="2025"> -->
+        </div>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="GAY" name="gender" value="female" required>
+            <label for="GAY">GAY</label>
+        </fieldset>    
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="gambling" name="hobbies" value="gambling">
+            <label for="gambling">Gambling</label>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+            <label for="cooking">Cooking</label>
+        </fieldset>
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="VN">Vietnam</option>
+                <option value="UK">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="JP">Japan</option>
+                <option value="KR">Korea</option>
+            </select>
+        </div>
+        <div>
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile_picture" accept="image/*" required>
+        </div>
+        <fieldset>
+            <input type="checkbox" id="I agree to the Terms and Condition">
+        </fieldset>
+    </div>
+</body>
+</html>
